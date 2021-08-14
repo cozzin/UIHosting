@@ -13,6 +13,8 @@
 		CE283D7E26C79E6C000F4038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE283D7C26C79E6C000F4038 /* Main.storyboard */; };
 		CE283D8026C79E6F000F4038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE283D7F26C79E6F000F4038 /* Assets.xcassets */; };
 		CE283D8326C79E6F000F4038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE283D8126C79E6F000F4038 /* LaunchScreen.storyboard */; };
+		CE283D9E26C7A5FA000F4038 /* UIHosting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE283D9026C79E7B000F4038 /* UIHosting.framework */; };
+		CE283DA026C7A69A000F4038 /* ExampleSwiftUIRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		CE283D8226C79E6F000F4038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE283D8426C79E6F000F4038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE283D8A26C79E7B000F4038 /* UIHosting.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIHosting.xcodeproj; path = ../UIHosting.xcodeproj; sourceTree = "<group>"; };
+		CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSwiftUIRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE283D9E26C7A5FA000F4038 /* UIHosting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				CE283D8A26C79E7B000F4038 /* UIHosting.xcodeproj */,
 				CE283D7526C79E6C000F4038 /* UIHostingExample */,
 				CE283D7426C79E6C000F4038 /* Products */,
+				CE283D9826C7A5CE000F4038 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +83,7 @@
 				CE283D7626C79E6C000F4038 /* AppDelegate.swift */,
 				CE283D7826C79E6C000F4038 /* SceneDelegate.swift */,
 				CE283D7A26C79E6C000F4038 /* ViewController.swift */,
+				CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */,
 				CE283D7C26C79E6C000F4038 /* Main.storyboard */,
 				CE283D7F26C79E6F000F4038 /* Assets.xcassets */,
 				CE283D8126C79E6F000F4038 /* LaunchScreen.storyboard */,
@@ -93,6 +99,13 @@
 				CE283D9226C79E7B000F4038 /* UIHostingTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CE283D9826C7A5CE000F4038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE283D7B26C79E6C000F4038 /* ViewController.swift in Sources */,
+				CE283DA026C7A69A000F4038 /* ExampleSwiftUIRow.swift in Sources */,
 				CE283D7726C79E6C000F4038 /* AppDelegate.swift in Sources */,
 				CE283D7926C79E6C000F4038 /* SceneDelegate.swift in Sources */,
 			);

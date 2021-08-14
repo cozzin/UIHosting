@@ -10,6 +10,7 @@
 		CE283D5A26C79E1F000F4038 /* UIHosting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE283D5026C79E1E000F4038 /* UIHosting.framework */; };
 		CE283D5F26C79E1F000F4038 /* UIHostingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D5E26C79E1F000F4038 /* UIHostingTests.swift */; };
 		CE283D6126C79E1F000F4038 /* UIHosting.h in Headers */ = {isa = PBXBuildFile; fileRef = CE283D5326C79E1E000F4038 /* UIHosting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE283D9726C7A476000F4038 /* UIHostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D9626C7A476000F4038 /* UIHostingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CE283D5926C79E1F000F4038 /* UIHostingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIHostingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE283D5E26C79E1F000F4038 /* UIHostingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingTests.swift; sourceTree = "<group>"; };
 		CE283D6026C79E1F000F4038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE283D9626C7A476000F4038 /* UIHostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				CE283D5326C79E1E000F4038 /* UIHosting.h */,
 				CE283D5426C79E1E000F4038 /* Info.plist */,
+				CE283D9626C7A476000F4038 /* UIHostingCell.swift */,
 			);
 			path = UIHosting;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					CE283D4F26C79E1E000F4038 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					CE283D5826C79E1F000F4038 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE283D9726C7A476000F4038 /* UIHostingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		CE283D6526C79E1F000F4038 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -359,6 +365,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +374,7 @@
 		CE283D6626C79E1F000F4038 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -393,6 +401,7 @@
 		CE283D6826C79E1F000F4038 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = UIHostingTests/Info.plist;
@@ -411,6 +420,7 @@
 		CE283D6926C79E1F000F4038 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = UIHostingTests/Info.plist;
