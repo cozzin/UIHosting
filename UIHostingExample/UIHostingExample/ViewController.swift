@@ -45,7 +45,7 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HostingCell", for: indexPath) as! HostingCell<ExampleSwiftUIRow>
-        cell.configure(with: ExampleSwiftUIRow(count: indexPath.row))
+        cell.configure(view: ExampleSwiftUIRow(count: indexPath.row), parent: self)
         return cell
     }
 }

@@ -31,11 +31,15 @@ public final class HostingCell<Content>: UITableViewCell where Content: View {
     public override func prepareForReuse() {
         super.prepareForReuse()
         
+        hostingController.willMove(toParent: nil)
         hostingController.rootView = nil
+        hostingController.removeFromParent()
     }
-
-    public func configure(with view: Content) {
+    
+    public func configure(view: Content, parent: UIViewController?) {
+        parent?.addChild(hostingController)
         hostingController.rootView = view
-        setNeedsLayout()
+        hostingController.view.invalidateIntrinsicContentSize()
+        hostingController.didMove(toParent: parent)
     }
 }
