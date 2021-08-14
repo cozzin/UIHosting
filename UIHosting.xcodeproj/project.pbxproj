@@ -11,6 +11,8 @@
 		CE283D5F26C79E1F000F4038 /* UIHostingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D5E26C79E1F000F4038 /* UIHostingTests.swift */; };
 		CE283D6126C79E1F000F4038 /* UIHosting.h in Headers */ = {isa = PBXBuildFile; fileRef = CE283D5326C79E1E000F4038 /* UIHosting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE283D9726C7A476000F4038 /* UIHostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D9626C7A476000F4038 /* UIHostingCell.swift */; };
+		CE283DA626C7BC89000F4038 /* FixedSafeAreaInsetsHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283DA526C7BC89000F4038 /* FixedSafeAreaInsetsHostingViewController.swift */; };
+		CE283DA826C7C001000F4038 /* UIHostingHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283DA726C7C001000F4038 /* UIHostingHeaderFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		CE283D5E26C79E1F000F4038 /* UIHostingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingTests.swift; sourceTree = "<group>"; };
 		CE283D6026C79E1F000F4038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE283D9626C7A476000F4038 /* UIHostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingCell.swift; sourceTree = "<group>"; };
+		CE283DA526C7BC89000F4038 /* FixedSafeAreaInsetsHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSafeAreaInsetsHostingViewController.swift; sourceTree = "<group>"; };
+		CE283DA726C7C001000F4038 /* UIHostingHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingHeaderFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				CE283D5326C79E1E000F4038 /* UIHosting.h */,
 				CE283D5426C79E1E000F4038 /* Info.plist */,
 				CE283D9626C7A476000F4038 /* UIHostingCell.swift */,
+				CE283DA726C7C001000F4038 /* UIHostingHeaderFooterView.swift */,
+				CE283DA526C7BC89000F4038 /* FixedSafeAreaInsetsHostingViewController.swift */,
 			);
 			path = UIHosting;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE283D9726C7A476000F4038 /* UIHostingCell.swift in Sources */,
+				CE283DA626C7BC89000F4038 /* FixedSafeAreaInsetsHostingViewController.swift in Sources */,
+				CE283DA826C7C001000F4038 /* UIHostingHeaderFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
