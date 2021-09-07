@@ -31,10 +31,14 @@ struct TableViewWrapper<Data, Content>: UIViewRepresentable where Content: View 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "UIHostingCell", for: indexPath) as! UIHostingCell<Content>
             cell.configure(
-                view: content(data[indexPath.row]),
-                parent: tableView.parentViewController
+                content(data[indexPath.row])
             )
             return cell
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            print("indexPath: \(indexPath)")
         }
     }
 

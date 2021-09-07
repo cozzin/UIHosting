@@ -10,29 +10,50 @@ import UIHosting
 import SwiftUI
 
 final class ViewController: UIViewController {
-        
-    private lazy var button: UIButton = {
+    
+    private lazy var vStack: UIStackView = {
+        let vStack: UIStackView = UIStackView(frame: .zero)
+        vStack.axis = .vertical
+        return vStack
+    }()
+    
+    private lazy var presentHostingControllerButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setTitle("present example hostingController", for: .normal)
+        button.setTitle("Present HostingController", for: .normal)
         button.setTitleColor(.label, for: .normal)
-        button.addTarget(self, action: #selector(onTapButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(onTapHostingControllerButton), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var presentViewControllerButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitle("Present ViewController", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        button.addTarget(self, action: #selector(onTapViewControllerButton), for: .touchUpInside)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        button.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        button.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        view.addSubview(vStack)
+        vStack.translatesAutoresizingMaskIntoConstraints = false
+        vStack.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        vStack.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
+        vStack.addArrangedSubview(presentHostingControllerButton)
+        vStack.addArrangedSubview(presentViewControllerButton)
     }
     
     @objc
-    private func onTapButton() {
+    private func onTapHostingControllerButton() {
         let controller = UIHostingController(rootView: ExampleSwiftUIContent())
+        present(controller, animated: true)
+    }
+    
+    @objc
+    private func onTapViewControllerButton() {
+        let controller = TableViewController()
         present(controller, animated: true)
     }
 }

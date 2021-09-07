@@ -17,6 +17,7 @@
 		CE283DA026C7A69A000F4038 /* ExampleSwiftUIRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */; };
 		CE283DA226C7AF22000F4038 /* TableViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283DA126C7AF22000F4038 /* TableViewWrapper.swift */; };
 		CE283DA426C7B195000F4038 /* ExampleSwiftUIContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283DA326C7B195000F4038 /* ExampleSwiftUIContent.swift */; };
+		CE9AE41026E6F91C00405919 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AE40F26E6F91C00405919 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSwiftUIRow.swift; sourceTree = "<group>"; };
 		CE283DA126C7AF22000F4038 /* TableViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWrapper.swift; sourceTree = "<group>"; };
 		CE283DA326C7B195000F4038 /* ExampleSwiftUIContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSwiftUIContent.swift; sourceTree = "<group>"; };
+		CE9AE40F26E6F91C00405919 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				CE283D7626C79E6C000F4038 /* AppDelegate.swift */,
 				CE283D7826C79E6C000F4038 /* SceneDelegate.swift */,
 				CE283D7A26C79E6C000F4038 /* ViewController.swift */,
+				CE9AE40F26E6F91C00405919 /* TableViewController.swift */,
 				CE283DA126C7AF22000F4038 /* TableViewWrapper.swift */,
 				CE283DA326C7B195000F4038 /* ExampleSwiftUIContent.swift */,
 				CE283D9F26C7A69A000F4038 /* ExampleSwiftUIRow.swift */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE283DA426C7B195000F4038 /* ExampleSwiftUIContent.swift in Sources */,
+				CE9AE41026E6F91C00405919 /* TableViewController.swift in Sources */,
 				CE283D7B26C79E6C000F4038 /* ViewController.swift in Sources */,
 				CE283DA026C7A69A000F4038 /* ExampleSwiftUIRow.swift in Sources */,
 				CE283D7726C79E6C000F4038 /* AppDelegate.swift in Sources */,

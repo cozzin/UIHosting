@@ -35,16 +35,11 @@ final class UIHostingHeaderFooterView<Content>: UITableViewHeaderFooterView wher
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        
-        hostingController.willMove(toParent: nil)
         hostingController.rootView = nil
-        hostingController.removeFromParent()
     }
     
-    public func configure(view: Content, parent: UIViewController?) {
-        parent?.addChild(hostingController)
+    public func configure(view: Content) {
         hostingController.rootView = view
         hostingController.view.invalidateIntrinsicContentSize()
-        hostingController.didMove(toParent: parent)
     }
 }

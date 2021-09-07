@@ -30,16 +30,11 @@ public final class UIHostingCell<Content>: UITableViewCell where Content: View {
 
     public override func prepareForReuse() {
         super.prepareForReuse()
-        
-        hostingController.willMove(toParent: nil)
         hostingController.rootView = nil
-        hostingController.removeFromParent()
     }
     
-    public func configure(view: Content, parent: UIViewController?) {
-        parent?.addChild(hostingController)
+    public func configure(_ view: Content) {
         hostingController.rootView = view
         hostingController.view.invalidateIntrinsicContentSize()
-        hostingController.didMove(toParent: parent)
     }
 }
