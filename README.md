@@ -4,11 +4,11 @@
 - Using SwiftUI in UITableViewCell
 - [UITableViewCell에서 SwiftUI 사용하기 - SwiftUI와 UIKit을 함께 사용하며 겪은 시행착오](https://medium.com/@hongseongho/uitableviewcell%EC%97%90%EC%84%9C-swiftui-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-43321a9e9e90)
 
-## Setup
+## 🧰 Setup
 1. In your Xcode project, navigate to File > Swift Packages > Add Package Dependancy...
 2. Paste the following into the URL field: https://github.com/cozzin/UIHosting
 
-## 🧰 Usage
+## 🧑‍💻 Usage
 ```swift
 import UIHosting
 
