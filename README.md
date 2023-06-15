@@ -1,5 +1,7 @@
 # UIHosting
 
+⚠️ Now, it's better to use [UIHostingConfiguration](https://developer.apple.com/documentation/SwiftUI/UIHostingConfiguration). Here is WWDC session that describe how to use it https://developer.apple.com/videos/play/wwdc2022/10072/
+
 ## 🚀 Motivation
 - Using SwiftUI in UITableViewCell
 - [UITableViewCell에서 SwiftUI 사용하기 - SwiftUI와 UIKit을 함께 사용하며 겪은 시행착오](https://medium.com/@hongseongho/uitableviewcell%EC%97%90%EC%84%9C-swiftui-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-43321a9e9e90)
